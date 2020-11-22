@@ -15,6 +15,7 @@ try:
 except EnvironmentError:
     os.chdir(os.path.expanduser('~'))
 
+print("test1")
 
 from calibre.constants import (iswindows, ismacos, islinux, isfrozen,
         isbsd, preferred_encoding, __appname__, __version__, __author__,
