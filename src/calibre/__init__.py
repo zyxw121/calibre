@@ -8,13 +8,13 @@ import sys, os, re, time, random, warnings
 from polyglot.builtins import codepoint_to_chr, unicode_type, range, hasenv, native_string_type
 from math import floor
 from functools import partial
-
 if not hasenv('CALIBRE_SHOW_DEPRECATION_WARNINGS'):
     warnings.simplefilter('ignore', DeprecationWarning)
 try:
     os.getcwd()
 except EnvironmentError:
     os.chdir(os.path.expanduser('~'))
+
 
 from calibre.constants import (iswindows, ismacos, islinux, isfrozen,
         isbsd, preferred_encoding, __appname__, __version__, __author__,

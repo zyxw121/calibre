@@ -51,7 +51,7 @@ def get_parser(usage):
         '--with-library',
         default=None,
         help=_(
-            'Path to the calibre library. Default is to use the path stored in the settings.'
+            'XPath to the calibre library. Default is to use the path stored in the settings.'
             ' You can also connect to a calibre Content server to perform actions on'
             ' remote libraries. To do so use a URL of the form: http://hostname:port/#library_id'
             ' for example, http://localhost:8080/#mylibrary. library_id is the library id'
