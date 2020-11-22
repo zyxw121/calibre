@@ -54,3 +54,9 @@ recipes/debug
 /*env*/
 cmake-build-*
 bypy/b
+
+*.txz
+*.swp
+ebooks/*
+.config/*
+*.sqlite

@@ -1,0 +1,19 @@
+dev:
+  build: .
+  dockerfile: Dockerfile.dev
+  volumes:
+    - "./ebooks:/home/Books"
+    - "./calibre:/home/calibre"
+  ports:
+    - "8080:8080"
+  entrypoint: calibre-server /home/Books
+
+prod:
+  build: .
+  dockerfile: Dockerfile
+  volumes:
+    - "./ebooks:/home/Books"
+  ports:
+    - "8080:8080"
+  command: calibre-server --enable-auth --auth-mode basic --userdb /home/cal/server-users.sqlite /home/Books
+
